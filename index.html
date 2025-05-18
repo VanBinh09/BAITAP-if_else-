@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập</title>
+</head>
+<body>
+    <script>
+        //cau1
+// let a = Number(prompt("Nhập số a:"));
+// let b = Number(prompt("Nhập số b:"));
+
+// if (b !== 0) {
+//     if (a % b === 0) {
+//         document.write(`${a} chia hết cho ${b}`);
+//     } else {
+//         document.write(`${a} không chia hết cho ${b}`);
+//     }
+// } else {
+//     document.write("Không thể chia cho 0");
+// }
+//cau 2
+let tuoi = Number(prompt("Nhập tuổi:"));
+
+if (tuoi >= 15) {
+    document.write("Đủ điều kiện vào lớp 10");
+} else {
+    document.write("Không đủ điều kiện vào lớp 10");
+}
+//cau3
+let x = Number(prompt("Nhập một số nguyên bất kỳ:"));
+
+if (x > 0) {
+   console.log("Số lớn hơn 0");
+} else if (x < 0) {
+    console.log("Số nhỏ hơn 0");
+} else {
+   console.log("Số bằng 0");
+}
+//cau 4
+// let a = Number(prompt("Nhập số thứ nhất:"));
+// let b = Number(prompt("Nhập số thứ hai:"));
+// let c = Number(prompt("Nhập số thứ ba:"));
+
+// let max = a;
+
+// if (b > max) max = b;
+// if (c > max) max = c;
+
+// console.log(`Số lớn nhất là: ${max}`);
+//cau 5
+let kt = Number(prompt("Nhập điểm bài kiểm tra:"));
+let gk = Number(prompt("Nhập điểm giữa kỳ:"));
+let ck = Number(prompt("Nhập điểm cuối kỳ:"));
+
+let avg = (kt + gk + ck) / 3;
+let xepLoai = "";
+
+if (avg >= 8) {
+    xepLoai = "Giỏi";
+} else if (avg >= 6.5) {
+    xepLoai = "Khá";
+} else if (avg >= 5) {
+    xepLoai = "Trung bình";
+} else {
+    xepLoai = "Yếu";
+}
+
+document.write(`Điểm trung bình: ${avg.toFixed(2)}<br>Xếp loại: ${xepLoai}`);
+//cau 6
+let doanhSo = Number(prompt("Nhập doanh số bán hàng (VNĐ):"));
+let hoaHong = 0;
+
+if (doanhSo >= 100000000) {
+    hoaHong = doanhSo * 0.1;
+} else if (doanhSo >= 50000000) {
+    hoaHong = doanhSo * 0.05;
+} else if (doanhSo > 0) {
+    hoaHong = doanhSo * 0.02;
+} else {
+    hoaHong = 0;
+}
+
+document.write(`Hoa hồng nhận được: ${hoaHong.toLocaleString()} VNĐ`);
+//cau 7
+let phiThueBao = 25000;
+let soPhut = Number(prompt("Nhập số phút gọi:"));
+let cuoc = 0;
+
+if (soPhut <= 50) {
+    cuoc = soPhut * 600;
+} else if (soPhut <= 200) {
+    cuoc = 50 * 600 + (soPhut - 50) * 400;
+} else {
+    cuoc = 50 * 600 + 150 * 400 + (soPhut - 200) * 200;
+}
+
+let tongCuoc = cuoc + phiThueBao;
+
+document.write(`Tổng cước điện thoại: ${tongCuoc.toLocaleString()} VNĐ`);
+
+</script>
+
+</body>
+</html>
